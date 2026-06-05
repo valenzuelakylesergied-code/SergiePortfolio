@@ -1,0 +1,1648 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kyle Sergie Valenzuela's portfolio — Frontend Developer and UI Designer specializing in responsive websites and intuitive user interfaces."
+    />
+    <title>Sergie's Portfolio</title>
+    <link rel="icon" href="imgs/Logo.png" sizes="64x64" type="image/x-icon" />
+
+    <!-- Browser tab icon -->
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="myphoto.png" />
+
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Instrument+Serif:ital@0;1&family=Rethink+Sans:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--BOOTSTRAP-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- FONT AWESOME FREE CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Animation -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!--PORTFOLIO CSS-->
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
+
+  <body>
+    <div
+      class="side-nav d-flex flex-row align-items-center gap-4"
+      data-aos="fade-left"
+      data-aos-delay="200"
+      data-aos-easing="ease-in-out"
+    >
+      <button
+        aria-label="Toggle navigation"
+        class="sidenav-toggle d-md-none"
+        data-bs-toggle="collapse"
+        data-bs-target="#sidenavContent"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <div class="collapse d-md-block" id="sidenavContent">
+        <div class="sidenav-content">
+          <a href="#home" class="active">Home</a>
+          <a href="#service-section">Services</a>
+          <a href="#about-me">About Me</a>
+          <a href="#web-projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <main class="hero-section hero-section-1" id="home">
+      <!-- Gradient orbs -->
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="hero-vignette"></div>
+
+      <div class="container">
+        <div class="hero text-center">
+          <!--
+          <img
+            src="imgs/hero-section-img1.png"
+            loading="lazy"
+            alt=""
+            class="hero-pic"
+          />
+          <img
+            src="imgs/hero-section-img2.png"
+            loading="lazy"
+            alt=""
+            class="hero-pic-2"
+          />
+
+          -->
+          <div
+            class="hero-brow-container mt-5 mb-4"
+            data-aos="fade-down"
+            data-aos-duration="1200"
+            data-aos-delay="100"
+            data-aos-once="false"
+          >
+            <img src="imgs/Logo.png" alt="" class="hero-brow-logo" />
+            <h5 class="hero-brow">
+              Available for Freelance & Full-Time Opportunities
+            </h5>
+          </div>
+
+          <div class="hero-title mb-4">
+            <h1 class="hero-title-t1">
+              Kyle <span class="hot-orange"> <i>Sergie</i></span>
+            </h1>
+            <h1 class="hero-title-t1">Valenzuela</h1>
+          </div>
+
+          <div class="hero-text">
+            <h5 class="typing mb-4">FRONTEND DEVELOPER & UI DESIGNER</h5>
+          </div>
+
+          <p class="container w-75 mb-5">
+            Building digital experiences that are visually precise, functionally
+            <br />
+            seamless, and memorable.
+          </p>
+
+          <div
+            class="hero-buttons d-flex justify-content-center align-content-center gap-3"
+          >
+            <button
+              class="button-a gap-2"
+              onclick="location.href = '#web-projects'"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              View Projects
+            </button>
+            <button class="button-b" onclick="location.href = '#contact'">
+              Get in Touch
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main class="secondary-bg">
+      <!--Slider Section-->
+      <div class="slider" id="slider">
+        <div class="skills mb-5">
+          <div class="card-track">
+            <div class="card-item">
+              <img src="imgs/html-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/css-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/js-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/bs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/figma-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/canva-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/vs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <!--dupe-->
+
+            <div class="card-item">
+              <img src="imgs/html-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/css-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/js-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/bs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/figma-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/canva-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/vs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <!--dupe-->
+
+            <div class="card-item">
+              <img src="imgs/html-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/css-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/js-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/bs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/figma-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/canva-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/vs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <!--dupe-->
+
+            <div class="card-item">
+              <img src="imgs/html-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/css-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/js-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/bs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/figma-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/canva-icon.jpg" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <img src="imgs/vs-icon.png" loading="lazy" alt="" />
+            </div>
+
+            <div class="card-item">
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Services Section-->
+      <section id="service-section" class="service-section">
+        <div class="section-title">
+          <span class="line"></span>
+          <h6>WHAT I DO</h6>
+        </div>
+        <h2 class="id-name mb-4">
+          Crafting digital <br />
+          <span class="hot-orange"><i>experiences.</i></span>
+        </h2>
+        <div
+          class="service d-flex flex-wrap justify-content-center align-content-center mb-5"
+        >
+          <div class="col-6 col-lg-3">
+            <div
+              class="front-end service-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="service-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h5>Frontend Development</h5>
+              <p>
+                Responsive and interactive websites crafted with HTML, CSS,
+                JavaScript, and Bootstrap.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <div
+              class="ui-ux service-card"
+              data-aos="fade-up"
+              data-aos-delay="250"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="service-icon">
+                <i class="fa-solid fa-paint-brush"></i>
+              </div>
+              <h5>UI Design</h5>
+
+              <p>
+                Minimal, intuitive, and user-focused interfaces designed with
+                clarity and experience in mind.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div
+              class="responsive service-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="service-icon">
+                <i class="fa-solid fa-mobile-alt"></i>
+              </div>
+              <h5>Responsive Experiences</h5>
+
+              <p>
+                Layouts that adapt seamlessly across desktop, tablet, and mobile
+                devices.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div
+              class="creative service-card"
+              data-aos="fade-up"
+              data-aos-delay="350"
+              data-aos-easing="ease-in-out"
+            >
+              <div class="service-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <h5>Creative + Functional</h5>
+
+              <p>
+                Balancing aesthetics and functionality to create web experiences
+                that feel smooth and intentional.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--About Us Section-->
+    <section id="about-me">
+      <div class="w-100">
+        <div class="container-style">
+          <div class="row mb-6">
+            <div class="col-12 col-lg-6">
+              <div class="id-img text-center mb-4">
+                <img
+                  src="imgs/pfp (2).jpg"
+                  alt=""
+                  class="img-fluid shadow h-100 mb-4 mb-md-0"
+                  loading="lazy"
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                  data-aos-delay="100"
+                  data-aos-once="false"
+                />
+              </div>
+            </div>
+            <div
+              class="col-12 col-lg-6 d-flex flex-column"
+              data-aos="fade-left"
+              data-aos-duration="1200"
+              data-aos-delay="100"
+              data-aos-once="false"
+            >
+              <div class="id-content">
+                <div class="section-title">
+                  <span class="line"></span>
+                  <h6>ABOUT ME</h6>
+                </div>
+
+                <h2 class="id-name mb-3">
+                  A Designer who <span class="hot-orange"><i>codes.</i></span>
+                </h2>
+                <p class="mb-5">
+                  I am a recent Information Technology graduate seeking an
+                  opportunity as a Junior Programmer where I can apply my
+                  academic knowledge and technical skills in real-world
+                  projects.
+                  <br />
+                  <br />
+                  I am eager to gain hands-on experience in web development,
+                  contribute to team objectives, and continuously improve my
+                  programming abilities while delivering high-quality and
+                  efficient solutions.
+                </p>
+              </div>
+
+              <div class="col">
+                <div class="skill-sets mb-4">
+                  <div class="tech-skill d-flex flex-wrap">
+                    <div class="tech-skill-item">HTML5</div>
+                    <div class="tech-skill-item">CSS</div>
+                    <div class="tech-skill-item">Javascript</div>
+                    <div class="tech-skill-item">Bootstrap</div>
+                    <div class="tech-skill-item">Figma</div>
+                    <div class="tech-skill-item">Canva</div>
+                    <div class="tech-skill-item">GitHub</div>
+                    <div class="tech-skill-item">Detail-oriented</div>
+                    <div class="tech-skill-item">Adaptability</div>
+                    <div class="tech-skill-item">Logical problem-solving</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="section-title">
+                  <span class="line"></span>
+                  <h6>EDUCATION</h6>
+                </div>
+                <div class="education">
+                  <div class="timeline">
+                    <div class="timeline-item">
+                      <h5 class="timeline-title">Pampanga State University</h5>
+                      <div class="timeline-text">
+                        <ul>
+                          <li>Bachelor of Science in Information Technology</li>
+                          <li>2022-2026</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item">
+                      <h5 class="timeline-title">Pampanga State University</h5>
+                      <div class="timeline-text">
+                        <ul>
+                          <li>Senior High School – STEM Strand</li>
+                          <li>With High Honors</li>
+                          <li>2020-2022</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <div class="timeline-item">
+                      <h5 class="timeline-title">
+                        Guagua National Colleges, Montessori
+                      </h5>
+                      <div class="timeline-text">
+                        <ul>
+                          <li>With Honors</li>
+                          <li>2016-2020</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col mt-5 ms-4">
+                <a
+                  href="files/Valenzuela-Resume.pdf"
+                  download
+                  class="download-resume"
+                >
+                  <button class="button-a">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    Download Resume
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <main class="secondary-bg">
+      <!--Web Projects Section-->
+      <section id="web-projects" class="mx-4">
+        <div class="section-title mt-5">
+          <span class="line"></span>
+          <h6>SELECTED WORK</h6>
+        </div>
+        <h2 class="id-name mb-4">Projects that <i>matter.</i></h2>
+        <div
+          class="d-flex flex-column align-items-center justify-content-center gap-4"
+        >
+          <!-- Card 1 -->
+          <div
+            class="project-card row"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="project-image col-12 col-md-6">
+              <img
+                src="imgs/msmallari.png"
+                loading="lazy"
+                alt="MS Mallari Construction"
+              />
+            </div>
+            <div class="project-content col-12 col-md-6 my-3">
+              <div class="project-brow">
+                <h6>01</h6>
+              </div>
+
+              <div class="project-title my-4">
+                <h3>MS Mallari Construction</h3>
+              </div>
+
+              <div class="project-description">
+                <p>
+                  MS Mallari Construction website showcases services, project
+                  portfolio, and company info with a responsive, mobile-friendly
+                  design that enhances user experience.
+                </p>
+              </div>
+
+              <div class="project-label my-3">
+                <small class="project-item">HTML5</small>
+                <small class="project-item">CSS3</small>
+                <small class="project-item">JavaScript</small>
+                <small class="project-item">Bootstrap</small>
+                <small class="project-item">Firebase</small>
+              </div>
+
+              <div class="project-buttons">
+                <button
+                  class="button-a"
+                  onclick="
+                    window.open(
+                      'https://valenzuelakylesergied-code.github.io/MS-Mallari-Construction/',
+                      '_blank',
+                    )
+                  "
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                  Website
+                </button>
+                <button
+                  class="button-b"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal1"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="project-card row"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="project-content col-12 col-md-6">
+              <div class="project-image col-12 col-md-6 d-block d-md-none my-3">
+                <img src="imgs/pmsense.png" loading="lazy" alt="PMsense" />
+              </div>
+
+              <div class="project-brow">
+                <h6>02</h6>
+              </div>
+
+              <div class="project-title my-4">
+                <h3>
+                  PMsense Air Quality Monitoring Website in Bacolor Pampanga
+                </h3>
+              </div>
+
+              <div class="project-description">
+                <p>
+                  PMSense is an IoT air quality monitoring platform that
+                  displays real-time PM1, PM2.5, and PM10 data on an intuitive
+                  web dashboard, helping users track air conditions and make
+                  informed decisions.
+                </p>
+              </div>
+
+              <div class="project-label my-3">
+                <small class="project-item">HTML5</small>
+                <small class="project-item">CSS3</small>
+                <small class="project-item">JavaScript</small>
+                <small class="project-item">Bootstrap</small>
+                <small class="project-item">PHP</small>
+                <small class="project-item">Firebase</small>
+              </div>
+
+              <div class="project-buttons">
+                <!--
+                <button class="button-a">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                  Website
+                </button>
+                 -->
+                <button
+                  class="button-b"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal2"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <div class="project-image col-12 col-md-6 d-none d-md-block">
+              <img src="imgs/pmsense.png" loading="lazy" alt="PMsense" />
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="project-card row"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="project-image col-12 col-md-6">
+              <img
+                src="imgs/ey-recoded.png"
+                loading="lazy"
+                alt="ExpressoYourself Redesigned"
+              />
+            </div>
+
+            <div class="project-content col-12 col-md-6">
+              <div class="project-brow">
+                <h6>03</h6>
+              </div>
+              <div class="project-title my-4">
+                <h3>
+                  ExpressoYourself – Café Website <small>(Redesigned)</small>
+                </h3>
+              </div>
+
+              <div class="project-description">
+                <p>
+                  Redesigned my first project’s homepage to apply modern design
+                  principles and responsiveness, showcasing improved skills and
+                  the ability to update existing websites. More details can go
+                  here.
+                </p>
+              </div>
+
+              <div class="project-label my-3">
+                <small class="project-item">HTML5</small>
+                <small class="project-item">CSS3</small>
+                <small class="project-item">JavaScript</small>
+                <small class="project-item">Bootstrap</small>
+              </div>
+
+              <div class="project-buttons">
+                <button
+                  class="button-a"
+                  onclick="
+                    window.open(
+                      'https://valenzuelakylesergied-code.github.io/Expresso-yourself/',
+                      '_blank',
+                    )
+                  "
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                  Website
+                </button>
+                <button
+                  class="button-b"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal3"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-title mt-5">
+          <span class="line"></span>
+          <h6 class="gray">MORE WORK</h6>
+        </div>
+
+        <!-- Slider Other Projects  -->
+
+        <div class="project-slider-wrapper">
+          <div class="project-slider gap-5 py-3">
+            <!-- Card 4 -->
+            <div class="project-card row">
+              <div class="project-image col-12 h-100">
+                <img
+                  src="imgs/artventure.png"
+                  loading="lazy"
+                  alt="ArtVenture"
+                />
+              </div>
+              <div class="project-content col-12">
+                <div class="project-title">
+                  <h5>
+                    <b>ArtVenture – Kids' Website for Coloring & Drawing</b>
+                  </h5>
+                </div>
+
+                <p>
+                  This project demonstrates my ability to create interactive,
+                  user-friendly experiences for children.
+                </p>
+
+                <div class="project-label d-flex">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                  <small class="project-item">JavaScript</small>
+                </div>
+              </div>
+              <div class="project-buttons">
+                <button
+                  type="button"
+                  class="button-b"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal4"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="project-card row">
+              <div class="project-image col-12">
+                <img src="imgs/kalma.png" loading="lazy" alt="Kalma" />
+              </div>
+              <div class="project-content col-12">
+                <div class="project-title">
+                  <h5>Kalma – Mental Health Awareness Website</h5>
+                </div>
+
+                <p>
+                  This project reflects my initial steps in building functional
+                  web applications
+                </p>
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                  <small class="project-item">PHP</small>
+                  <small class="project-item">MySQL</small>
+                </div>
+              </div>
+              <div class="project-buttons">
+                <button
+                  type="button"
+                  class="button-b"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal5"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="project-card row">
+              <div class="project-image col-12 h-100">
+                <img
+                  src="imgs/expresso ver1.png"
+                  loading="lazy"
+                  alt="ExpressoYourself v1"
+                />
+              </div>
+              <div class="project-content col-12">
+                <div class="project-title">
+                  <h5>ExpressoYourself – Café Website</h5>
+                </div>
+
+                <p>This was my first project while learning web development.</p>
+
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                </div>
+              </div>
+              <div class="project-buttons">
+                <button
+                  type="button"
+                  class="button-b"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal6"
+                >
+                  View More
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- end .container-style -->
+        </div>
+
+        <!-- Modal MS Mallari Construction -->
+        <div
+          class="modal fade"
+          id="modal1"
+          tabindex="-1"
+          aria-labelledby="modal1Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable custom-modal-width">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">MS Mallari Construction</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <video
+                  src="vids/msmallaricons-vid.mp4"
+                  type="video/mp4"
+                  playsinline
+                  preload="none"
+                  muted
+                ></video>
+
+                <h3>MS Mallari Construction</h3>
+
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                  <small class="project-item">JavaScript</small>
+                  <small class="project-item">Bootstrap</small>
+                  <small class="project-item">Firebase</small>
+                </div>
+
+                <div class="modal-project-description">
+                  <p>
+                    <strong>Role:</strong> Front-End Developer & UI Designer &
+                    Project Manager
+                  </p>
+
+                  <p>
+                    MS Mallari Construction is a responsive company website
+                    designed to present services, showcase completed projects,
+                    and provide essential business information in a clean and
+                    user-friendly layout.
+                  </p>
+
+                  <ul>
+                    <li>Responsive design for mobile and desktop users</li>
+                    <li>Service and project showcase sections</li>
+                    <li>Clean UI focused on usability and readability</li>
+                    <li>Optimized navigation for quick information access</li>
+                  </ul>
+
+                  <p>
+                    Built as a front-end project to demonstrate layout
+                    structuring, responsive design, and UI consistency using
+                    Bootstrap and custom CSS.
+                  </p>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="button-a"
+                  data-bs-dismiss="modal"
+                  playsinline
+                  preload="none"
+                  onclick="
+                    window.open(
+                      'https://valenzuelakylesergied-code.github.io/MS-Mallari-Construction/',
+                      '_blank',
+                    )
+                  "
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Visit Website
+                </button>
+                <button type="button" class="button-b" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal PMsense: Air Quality Monitoring Website in Bacolor Pampanga -->
+        <div
+          class="modal fade"
+          id="modal2"
+          tabindex="-1"
+          aria-labelledby="modal1Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable custom-modal-width">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  PMsense: Air Quality Monitoring Website in Bacolor Pampanga
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body gap-5">
+                <video
+                  src="vids/video-test (2).mp4"
+                  type="video/mp4"
+                  playsinline
+                  preload="none"
+                  muted
+                ></video>
+
+                <h3>
+                  PMsense: Air Quality Monitoring Website in Bacolor Pampanga
+                </h3>
+
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                  <small class="project-item">JavaScript</small>
+                  <small class="project-item">PHP</small>
+                  <small class="project-item">Bootstrap</small>
+                  <small class="project-item">Firebase</small>
+                </div>
+
+                <div class="modal-project-description">
+                  <p>
+                    <strong>Role:</strong> Front-End Developer & UI Designer &
+                    Project Manager
+                  </p>
+
+                  <p>
+                    PMSense is an IoT-based air quality monitoring platform
+                    developed to display real-time PM1, PM2.5, and PM10 air
+                    pollution data through an intuitive and user-friendly web
+                    dashboard.
+                  </p>
+
+                  <ul>
+                    <li>
+                      Real-time air quality monitoring and data visualization
+                    </li>
+                    <li>Interactive dashboard for tracking pollution levels</li>
+                    <li>Responsive interface optimized for multiple devices</li>
+                    <li>Clean UI focused on readability and accessibility</li>
+                  </ul>
+
+                  <p>
+                    Developed to help users monitor environmental air conditions
+                    and make informed health and safety decisions using
+                    real-time IoT sensor data and responsive front-end
+                    technologies.
+                  </p>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <!--
+                <button type="button" class="button-a" data-bs-dismiss="modal">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Visit Website
+                </button>
+              -->
+                <button type="button" class="button-b" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL for ExpressoYourself – Café Website (Redesigned)-->
+        <div
+          class="modal fade"
+          id="modal3"
+          tabindex="-1"
+          aria-labelledby="modal3Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable custom-modal-width">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  ExpressoYourself – Café Website (Redesigned)
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body gap-5">
+                <video
+                  src="vids/expressoyourseld-redesign.mp4"
+                  playsinline
+                  preload="none"
+                  type="video/mp4"
+                  muted
+                ></video>
+
+                <h3>ExpressoYourself – Café Website (Redesigned)</h3>
+
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                  <small class="project-item">JavaScript</small>
+                  <small class="project-item">Bootstrap</small>
+                </div>
+
+                <div class="modal-project-description">
+                  <p>
+                    <strong>Role:</strong> Front-End Developer & UI Designer
+                  </p>
+
+                  <p>
+                    This project is a redesign of my very first website
+                    homepage, rebuilt to apply modern UI/UX principles,
+                    responsive layouts, and improved visual consistency while
+                    preserving the core purpose of the original design.
+                  </p>
+
+                  <ul>
+                    <li>Modernized homepage layout and visual hierarchy</li>
+                    <li>
+                      Responsive design optimized for mobile and desktop devices
+                    </li>
+                    <li>
+                      Improved spacing, typography, and user interface
+                      consistency
+                    </li>
+                    <li>Enhanced overall user experience and accessibility</li>
+                  </ul>
+
+                  <p>
+                    Developed as a personal redesign project to showcase growth
+                    in front-end development, responsive web design, and the
+                    ability to improve and refine existing websites using modern
+                    design practices.
+                  </p>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  onclick="
+                    window.open(
+                      'https://valenzuelakylesergied-code.github.io/Expresso-yourself/',
+                      '_blank',
+                    )
+                  "
+                  class="button-a"
+                  data-bs-dismiss="modal"
+                >
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  Visit Website
+                </button>
+                <button type="button" class="button-b" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL for ArtVenture – Kids’ Website for Coloring & Drawing-->
+        <div
+          class="modal fade"
+          id="modal4"
+          tabindex="-1"
+          aria-labelledby="modal4Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable custom-modal-width">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  ArtVenture – Kids’ Website for Coloring & Drawing
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body gap-5">
+                <video
+                  src="vids/artventure-vid-demo.mp4"
+                  playsinline
+                  preload="none"
+                  type="video/mp4"
+                  muted
+                ></video>
+
+                <h3>ArtVenture – Kids’ Website for Coloring & Drawing</h3>
+
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                  <small class="project-item">JavaScript</small>
+                </div>
+
+                <div class="modal-project-description">
+                  <p>
+                    <strong>Role:</strong> Front-End Developer & UI Designer
+                  </p>
+
+                  <p>
+                    ArtVenture is an interactive website designed for children,
+                    featuring engaging activities and creative digital
+                    experiences in a colorful and user-friendly environment.
+                  </p>
+
+                  <ul>
+                    <li>Interactive and child-friendly website interface</li>
+                    <li>
+                      Manually implemented responsive layouts for multiple
+                      devices
+                    </li>
+                    <li>
+                      Creative visuals and engaging user experience design
+                    </li>
+                    <li>
+                      Improved functionality compared to earlier static web
+                      projects
+                    </li>
+                  </ul>
+
+                  <p>
+                    Developed during my first year of learning web development,
+                    this project reflects my early understanding of responsive
+                    design, interactive website creation, and adapting layouts
+                    for different screen sizes. ArtVenture also showcases my
+                    progression from building static pages to developing more
+                    dynamic and functional web experiences.
+                  </p>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="button-b" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL for Kalma – Mental Health Awareness Website -->
+        <div
+          class="modal fade"
+          id="modal5"
+          tabindex="-1"
+          aria-labelledby="modal5Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable custom-modal-width">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">
+                  Kalma – Mental Health Awareness Website
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body gap-5">
+                <video
+                  id="kalma-video"
+                  src="vids/KALMA Video Presentation.mp4"
+                  playsinline
+                  preload="none"
+                  type="video/mp4"
+                  controls
+                  muted
+                ></video>
+
+                <h3>Kalma – Mental Health Awareness Website</h3>
+
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                  <small class="project-item">PHP</small>
+                  <small class="project-item">MySQL</small>
+                </div>
+
+                <div class="modal-project-description">
+                  <p>
+                    <strong>Role:</strong> Front-End Developer (Beginner
+                    Project)
+                  </p>
+
+                  <p>
+                    Kalma is a mental health awareness website developed as one
+                    of my early projects to explore both front-end design and
+                    basic back-end integration. It focuses on providing an
+                    informational and supportive interface while implementing
+                    simple functional features.
+                  </p>
+
+                  <ul>
+                    <li>Basic form handling and user input processing</li>
+                    <li>
+                      Introduction to database connectivity and data storage
+                    </li>
+                    <li>
+                      Foundational front-end and back-end integration practice
+                    </li>
+                    <li>
+                      Early exploration of building functional web applications
+                    </li>
+                  </ul>
+
+                  <p>
+                    Although not fully responsive, this project demonstrates my
+                    early-stage understanding of web development fundamentals,
+                    including structure, interactivity, and basic server-side
+                    concepts. It reflects my initial steps toward building
+                    complete and functional web systems.
+                  </p>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="button-b" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--MODAL for ExpressoYourself – Café Website -->
+        <div
+          class="modal fade"
+          id="modal6"
+          tabindex="-1"
+          aria-labelledby="modal6Label"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-scrollable custom-modal-width">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">ExpressoYourself – Café Website</h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body gap-5">
+                <video
+                  src="vids/expressoyourself.mp4"
+                  playsinline
+                  preload="none"
+                  type="video/mp4"
+                  muted
+                ></video>
+
+                <h3>ExpressoYourself – Café Website</h3>
+
+                <div class="project-label">
+                  <small class="project-item">HTML5</small>
+                  <small class="project-item">CSS3</small>
+                </div>
+                <div class="modal-project-description">
+                  <p>
+                    <strong>Role:</strong> Front-End Developer (Beginner
+                    Project)
+                  </p>
+
+                  <p>
+                    ExpressoYourself is a café website created as my very first
+                    project while learning web development. It was built
+                    entirely using HTML and CSS to practice structuring web
+                    pages and applying visual styling principles.
+                  </p>
+
+                  <ul>
+                    <li>Basic website structure using semantic HTML</li>
+                    <li>Static layout design with custom styling</li>
+                    <li>
+                      Introduction to visual hierarchy and page composition
+                    </li>
+                    <li>
+                      Practice in building non-responsive static web pages
+                    </li>
+                  </ul>
+
+                  <p>
+                    Although not responsive, this project demonstrates my
+                    foundational understanding of web structure, styling, and
+                    design principles. It represents my earliest step in
+                    front-end development and the beginning of my growth as a
+                    web developer.
+                  </p>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="button-b" data-bs-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="certifications">
+      <div class="section-title">
+        <span class="line"></span>
+        <h6>Continues Learning</h6>
+      </div>
+      <h2 class="id-name mb-4">Certifications & <i>Courses</i></h2>
+
+      <div
+        class="project-slider py-3 d-flex align-items-center justify-content-start gap-4"
+      >
+        <a
+          href="https://www.credly.com/badges/23fa7a7c-3e45-4ad9-8339-4c85624b7f40"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="badge-card"
+        >
+          <img src="imgs/css-essentials.png" alt="Badge 1" class="badge-img" />
+          <div class="badge-info">
+            <h6>CSS Essentials</h6>
+            <p>Issued by Cisco</p>
+          </div>
+        </a>
+
+        <a
+          href="https://www.credly.com/badges/74df096f-a197-4fcb-ae90-fa9bcd5cede2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="badge-card"
+        >
+          <img
+            src="imgs/cloud-computing-fundamental.png"
+            alt="Badge 2"
+            class="badge-img"
+          />
+          <div class="badge-info">
+            <h6>Cloud Computing Fundamentals</h6>
+            <p>Issued by IBM SkillsBuild</p>
+          </div>
+        </a>
+        <!-- end .project-slider -->
+      </div>
+    </section>
+
+    <!--Get in Touch Section-->
+    <section class="section-divider" id="contact">
+      <div class="section-title">
+        <span class="line"></span>
+        <h6>GET IN TOUCH</h6>
+      </div>
+      <h2 class="id-name mb-4">
+        Let's <i>build</i> <br />
+        something <i>great.</i>
+      </h2>
+
+      <div
+        class="contact-us mx-3"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+        data-aos-delay="100"
+        data-aos-once="false"
+      >
+        <div class="contact-container row">
+          <div class="contact-us-title">
+            <h2>Contact</h2>
+          </div>
+          <div class="contact-infos col-12 col-md-6">
+            <div class="contact-us-personal">
+              <div class="contact-info">
+                <h6 class="touch-title">EMAIL</h6>
+                <p>valenzuelakylesergied@gmail.com</p>
+              </div>
+              <!--
+              <div class="contact-info">
+                <h6 class="touch-title">PHONE</h6>
+                <p>+63</p>
+              </div>
+            -->
+              <div class="contact-info">
+                <h6 class="touch-title">LOCATION</h6>
+                <p>Bacolor, Pampanga, Philippines</p>
+              </div>
+            </div>
+
+            <ul class="social-medias">
+              <li class="social-icon">
+                <a
+                  href="https://www.facebook.com/share/1CZqcHLdqT/?mibextid=wwXIfr"
+                  target="_blank"
+                  aria-label="Visit Facebook website"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+
+              <!--
+               <li class="social-icon mb-5">
+                <a
+                  href="https://m.me/kylesergie.valenzuela"
+                  target="_blank"
+                  aria-label="Visit my Messenger account"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-facebook-messenger"></i
+                ></a>
+              </li>
+              -->
+
+              <li class="social-icon">
+                <a
+                  href="https://www.instagram.com/kylesergie/"
+                  target="_blank"
+                  aria-label="Visit my Instagram account"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+              <li class="social-icon">
+                <a
+                  href="https://www.linkedin.com/in/kyle-sergie-valenzuela-012659379"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Visit my Linkedin account"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="social-icon">
+                <a
+                  href="https://www.tiktok.com/@sergiekyle?_r=1&_t=ZS-95dQyHyD6Rx"
+                  target="_blank"
+                  aria-label="Visit my Tiktok account"
+                  rel="noopener noreferrer"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <form action="https://formspree.io/f/mdajdake" method="post">
+              <div class="inputting w-100">
+                <div class="">
+                  <div class="sender-name row">
+                    <div class="col-12 col-md-6">
+                      <label class="touch-label">FIRST NAME</label>
+                      <input
+                        type="name"
+                        name="first_name"
+                        placeholder="Kyle Sergie"
+                        class="our-input"
+                      />
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <label class="touch-label">LAST NAME</label>
+                      <input
+                        type="name"
+                        name="last_name"
+                        placeholder="Valenzuela"
+                        class="our-input"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label class="touch-label">EMAIL</label>
+                      <input
+                        type="email"
+                        name="email"
+                        class="our-input"
+                        placeholder="Example@gmail.com"
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <label class="touch-label">MESSAGE</label>
+                      <textarea
+                        class="message-input our-input"
+                        name="message"
+                        placeholder="Your message here..."
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <button type="submit" class="submit button-a">
+                    Send a Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-icon my-4 w-100">
+        <h1>Sergie's Portfolio</h1>
+      </div>
+
+      <div class="copy-rights w-100 mb-2">
+        <p><i> &copy; 2026 Sergie's Profile. All rights reserved.</i></p>
+      </div>
+    </footer>
+
+    <!--JS BOOTSTRAP-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <!--JS for AOS-->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!--JS for custom scripts-->
+    <script src="app.js" defer></script>
+
+    <script>
+      AOS.init();
+    </script>
+
+    <script>
+      const slider = document.querySelector(".project-slider");
+      let isDown = false,
+        startX,
+        scrollLeft;
+
+      slider.addEventListener("mousedown", (e) => {
+        isDown = true;
+        startX = e.pageX - slider.offsetLeft;
+        scrollLeft = slider.scrollLeft;
+      });
+      slider.addEventListener("mouseleave", () => (isDown = false));
+      slider.addEventListener("mouseup", () => (isDown = false));
+      slider.addEventListener("mousemove", (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - slider.offsetLeft;
+        slider.scrollLeft = scrollLeft - (x - startX) * 1.5;
+      });
+    </script>
+
+    <script>
+      const sections = document.querySelectorAll("section[id], main[id]");
+      const navLinks = document.querySelectorAll(".sidenav-content a");
+
+      window.addEventListener("scroll", () => {
+        let scrollY = window.pageYOffset;
+
+        sections.forEach((section) => {
+          const top = section.offsetTop - 150;
+          const bottom = top + section.offsetHeight;
+
+          const id = section.getAttribute("id");
+
+          if (scrollY >= top && scrollY < bottom) {
+            navLinks.forEach((link) => {
+              link.classList.remove("active");
+
+              if (link.getAttribute("href") === `#${id}`) {
+                link.classList.add("active");
+              }
+            });
+          }
+        });
+      });
+    </script>
+
+    <script>
+      document.querySelectorAll(".modal").forEach((modal) => {
+        const video = modal.querySelector("video");
+        if (!video) return;
+
+        modal.addEventListener("shown.bs.modal", () => {
+          video.play();
+        });
+
+        modal.addEventListener("hidden.bs.modal", () => {
+          video.pause();
+          video.currentTime = 0;
+          video.src = video.src; // forces browser to release the resource
+        });
+      });
+    </script>
+  </body>
+</html>
