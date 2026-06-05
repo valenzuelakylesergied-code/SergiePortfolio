@@ -128,7 +128,8 @@ section {
 .side-nav {
   position: fixed;
   top: 32%;
-  right: 20px;
+  right: 0;
+  margin-right: 20px;
   transform: translateY(-50%);
   z-index: 1000;
 }
