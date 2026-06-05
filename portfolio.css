@@ -20,6 +20,9 @@
     hsla(0, 0%, 0%, 1) 56%
   );
 }
+* {
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
