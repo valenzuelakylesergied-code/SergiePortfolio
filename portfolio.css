@@ -150,6 +150,28 @@ section {
   font-weight: 600;
   transform: translateX(-4px);
 }
+@media (max-width: 768px) {
+  .side-nav {
+    top: auto;
+    bottom: 50px;
+    right: 20px;
+    transform: translateX(50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    border: rgba(255, 255, 255, 0.15) 0.25px solid;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .sidenav-content {
+    flex-direction: row; /* horizontal instead of vertical */
+    gap: 1rem;
+  }
+
+  .sidenav-content a {
+    font-size: 0.75rem;
+  }
+}
 .sidenav-toggle {
   background: none;
   border: none !important;
@@ -290,7 +312,7 @@ section {
 }
 .hero-brow {
   white-space: nowrap;
-  font-size: clamp(0.55rem, 1.8vw, 0.85rem);
+  font-size: clamp(0.3rem, 2.3vw, 0.85rem);
   margin-top: 8px;
 }
 .hero-section {
@@ -307,6 +329,8 @@ section {
   display: inline-block;
 }
 .hero-text h5 {
+  white-space: nowrap;
+  font-size: clamp(0.6rem, 3.5vw, 1rem);
   border-right: 5px solid var(--main-color);
   width: fit-content;
   white-space: nowrap;
@@ -331,6 +355,11 @@ section {
 .hero {
   margin-top: -5rem;
 }
+@media (max-width: 576px) {
+  .hero .w-75 {
+    width: 100% !important;
+  }
+}
 .hero-title {
   font-family: var(--font-accent);
 }
@@ -339,6 +368,8 @@ section {
 }
 .hero-buttons button {
   width: max-content;
+  padding: 0.75rem 2rem;
+  white-space: nowrap;
 }
 @keyframes spin {
   from {
@@ -713,6 +744,12 @@ li {
   border-radius: 12px;
   background-color: var(--bg);
 }
+
+@media (max-width: 576px) {
+  .contact-container {
+    padding: 2rem 1rem;
+  }
+}
 .contact-us {
   width: 100%;
   height: 100%;
@@ -723,7 +760,8 @@ li {
 .contact-infos {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 1rem;
+  margin-bottom: 2rem;
 }
 .social-medias {
   display: flex;
