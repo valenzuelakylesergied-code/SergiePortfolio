@@ -1611,7 +1611,6 @@
 
     <script>
       const sections = document.querySelectorAll("section[id], main[id]");
-      const navLinks = document.querySelectorAll(".sidenav-content a");
 
       window.addEventListener("scroll", () => {
         let scrollY = window.pageYOffset;
@@ -1647,7 +1646,7 @@
         modal.addEventListener("hidden.bs.modal", () => {
           video.pause();
           video.currentTime = 0;
-          video.src = video.src; // forces browser to release the resource
+          video.src = video.src;
         });
       });
     </script>
