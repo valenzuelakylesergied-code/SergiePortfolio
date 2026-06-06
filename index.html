@@ -47,23 +47,39 @@
   </head>
 
   <body>
-    <div
-      class="side-nav"
-      data-aos="fade-left"
-      data-aos-delay="200"
-      data-aos-easing="ease-in-out"
-    >
-      <div id="sidenavContent">
-        <div class="sidenav-content">
-          <a href="#home" class="active">Home</a>
-          <a href="#service-section">Services</a>
-          <a href="#about-me">About Me</a>
-          <a href="#web-projects">Projects</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact</a>
-        </div>
+    <nav class="side-nav" aria-label="Section navigation">
+      <div class="sidenav-content">
+        <a href="#home" class="nav-item active">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Home</span>
+        </a>
+
+        <a href="#service-section" class="nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Services</span>
+        </a>
+
+        <a href="#about-me" class="nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">About Me</span>
+        </a>
+
+        <a href="#web-projects" class="nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Projects</span>
+        </a>
+
+        <a href="#certifications" class="nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Certs</span>
+        </a>
+
+        <a href="#contact" class="nav-item">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Contact</span>
+        </a>
       </div>
-    </div>
+    </nav>
 
     <!--Hero Section-->
     <main class="hero-section hero-section-1" id="home">
@@ -1571,6 +1587,8 @@
     </script>
 
     <script>
+      const navLinks = document.querySelectorAll(".nav-item");
+
       const slider = document.querySelector(".project-slider");
       let isDown = false,
         startX,

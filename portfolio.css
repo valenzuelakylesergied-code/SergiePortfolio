@@ -129,77 +129,198 @@ section {
   background: var(--main-color);
   margin: 0 auto 10px;
 }
+/* ── Side nav — desktop ── */
 .side-nav {
   position: fixed;
-  top: 32%;
-  right: 0;
-  margin-right: 20px;
+  top: 50%;
+  right: 24px;
+  left: auto;
+  bottom: auto;
   transform: translateY(-50%);
   z-index: 1000;
+  width: auto;
 }
+
 .sidenav-content {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 0;
+  padding-left: 20px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  style: none;
 }
-.sidenav-content a {
-  color: var(--gray);
+
+.sidenav-content::before {
+  content: "";
+  position: absolute;
+  left: 3px;
+  top: 6px;
+  width: 1px;
+  height: calc(100% - 12px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0;
   text-decoration: none;
+  position: relative;
+}
+
+.nav-dot {
+  position: absolute;
+  left: -20px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: transparent;
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.nav-label {
   font-size: 1rem;
   font-family: var(--font-main);
-  transition: all 0.3s ease;
+  color: rgba(255, 255, 255, 0.3);
+  transition: color 0.25s ease;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
 }
-.sidenav-content a:hover {
+
+.nav-item:hover .nav-dot {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.nav-item:hover .nav-label {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.nav-item.active .nav-dot {
+  background: var(--main-color);
+  border-color: var(--main-color);
+  box-shadow: 0 0 0 3px rgba(235, 70, 4, 0.2);
+}
+
+.nav-item.active .nav-label {
   color: var(--main-color);
-  font-weight: 600;
 }
-.sidenav-content a.active {
-  color: var(--main-color);
-  font-weight: 600;
-  transform: translateX(-4px);
-}
+
+/* ── Mobile bottom bar ── */
 @media (max-width: 768px) {
   .side-nav {
-    position: fixed;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    width: fit-content;
-    background-color: rgba(0, 0, 0, 0.75);
-    backdrop-filter: blur(10px);
-    border: rgba(255, 255, 255, 0.15) 0.25px solid;
-    border-radius: 50px;
-    padding: 0.75rem 1.5rem;
+    top: auto !important;
+    right: auto !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: max-content;
   }
 
   .sidenav-content {
-    flex-direction: row; /* horizontal instead of vertical */
-    gap: 1rem;
+    flex-direction: row;
+    gap: 2px;
+    padding: 6px 8px;
+    padding-left: 8px;
+    background: rgba(10, 10, 10, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 0.5px solid rgba(255, 255, 255, 0.12);
+    border-radius: 20px;
   }
 
-  .sidenav-content a {
-    font-size: 0.75rem;
+  .sidenav-content::before {
+    display: none;
   }
-}
-.sidenav-toggle {
-  background: none;
-  border: none !important;
-  color: var(--gray);
-  width: fit-content;
-  height: fit-content;
-  padding: 0 !important;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
-}
-.sidenav-toggle:hover {
-  color: var(--main-color) !important;
-  background: none !important;
-}
-.sidenav-toggle i {
-  transition: transform 0.3s ease;
-}
-.sidenav-toggle[aria-expanded="true"] i {
-  transform: rotate(180deg);
+
+  .nav-item {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 10px;
+    border-radius: 14px;
+    transition: background 0.2s ease;
+  }
+
+  .nav-dot {
+    position: static;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    border: none;
+    background: transparent !important;
+    box-shadow: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav-item:nth-child(1) .nav-dot::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f015";
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .nav-item:nth-child(2) .nav-dot::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0ad";
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .nav-item:nth-child(3) .nav-dot::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f007";
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .nav-item:nth-child(4) .nav-dot::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f07b";
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .nav-item:nth-child(5) .nav-dot::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0a3";
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .nav-item:nth-child(6) .nav-dot::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0e0";
+    font-weight: 900;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .nav-label {
+    font-size: 0.55rem;
+    letter-spacing: 0;
+  }
+
+  .nav-item:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.06);
+  }
+
+  .nav-item.active {
+    background: rgba(235, 70, 4, 0.15);
+  }
+
+  .nav-item.active .nav-dot::before {
+    color: var(--main-color) !important;
+  }
 }
 .orb {
   position: absolute;
