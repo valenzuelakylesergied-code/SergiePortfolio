@@ -322,7 +322,7 @@ section {
   margin-top: -3px;
 }
 .hero-brow {
-  white-space: nowwrap;
+  white-space: nowrap;
   font-size: clamp(0.3rem, 2.3vw, 0.85rem);
   margin-top: 8px;
 }
