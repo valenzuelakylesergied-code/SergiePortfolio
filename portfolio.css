@@ -648,6 +648,8 @@ section {
   font-size: clamp(1rem, 4vw, 3rem);
 }
 .download-resume {
+  flex-wrap: nowrap;
+  gap: 0.5rem;
   text-decoration: none;
 }
 .tech-skill {
