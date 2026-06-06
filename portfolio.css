@@ -25,12 +25,16 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 body {
   overflow-x: hidden;
   background-color: #000 !important;
   color: #fff !important;
   letter-spacing: 0.02em;
+  overflow-x: hidden;
+  max-width: 100%;
 }
 p {
   font-family: var(--font-body);
@@ -212,6 +216,7 @@ section {
   top: -150px;
   left: -100px;
   animation: drift1 12s ease-in-out infinite;
+  overflow: hidden;
 }
 .orb-2 {
   width: 450px;
@@ -220,6 +225,7 @@ section {
   bottom: -120px;
   right: -80px;
   animation: drift2 15s ease-in-out infinite;
+  overflow: hidden;
 }
 .orb-3 {
   width: 300px;
@@ -229,6 +235,7 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
   animation: drift3 10s ease-in-out infinite;
+  overflow: hidden;
 }
 @keyframes drift1 {
   0%,
@@ -908,4 +915,4 @@ footer {
   font-weight: 700 !important;
 }
 
-/* version 3.0 */
+/* version 4.0 */
