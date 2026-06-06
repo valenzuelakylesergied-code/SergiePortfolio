@@ -162,7 +162,7 @@ section {
   .side-nav {
     top: auto;
     bottom: 50px;
-    right: 20px;
+    right: 0;
     transform: translateX(50%);
     background-color: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(10px);
@@ -322,7 +322,7 @@ section {
   margin-top: -3px;
 }
 .hero-brow {
-  white-space: normal;
+  white-space: nowwrap;
   font-size: clamp(0.3rem, 2.3vw, 0.85rem);
   margin-top: 8px;
 }
