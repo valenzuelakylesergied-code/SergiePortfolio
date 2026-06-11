@@ -314,10 +314,6 @@ section {
     background: rgba(255, 255, 255, 0.06);
   }
 
-  .nav-item.active {
-    background: rgba(235, 70, 4, 0.15);
-  }
-
   .nav-item.active .nav-dot::before {
     color: var(--main-color) !important;
   }
@@ -439,7 +435,7 @@ section {
 }
 .hero-brow-logo {
   max-width: 35px;
-  height: auto;
+  height: 40px;
   animation: spin 2s linear infinite;
   margin-top: -3px;
 }
