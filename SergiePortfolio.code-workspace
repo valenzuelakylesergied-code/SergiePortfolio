@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "SergiePortfolio",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "SergiePortfolio"
+  }
+}
